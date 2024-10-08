@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Battleship Game</title>
+  <style>
+    body {
+      text-align: center; 
+    }
+
+    .battleship-board {
+      display: grid;
+      grid-template-columns: repeat(4, 70px); 
+      grid-template-rows: repeat(4, 70px); 
+      margin: 20px auto;
+    }
+
+    .box {
+      width: 70px;
+      height: 70px;
+      background-color: brown;
+      text-align: center;
+      line-height: 70px;
+      border: 1px solid white;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .ship {
+      background-color: lightgray; 
+    }
+
+    .ship img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    .rules {
+      font-size: 14px;
+      margin: 20px auto;
+      color:white;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="heading"><u>Battleship</u></h1>
+  <p class="rules">
+    <strong>Game Rules:</strong><br>
+    1. Click on the cells to reveal the image hidden behind them.<br>
+    2. There are 5 ships hidden in the game.<br>
+    3. You win if you can find all ships in less than 8 clicks, else you lose.
+  </p>
+
+  <div class="battleship-board">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+  <p><strong>Ships found:</strong> <span id="ships-found">0</span>/5</p>
+  <p><strong>Chances left:</strong> <span id="chances-left">8</span></p>
+  <button id="reset-btn">Reset</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
