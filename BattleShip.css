@@ -1,0 +1,39 @@
+
+body{
+  background-color: tomato;
+  
+}
+#heading{
+  text-align: center;
+}
+u{
+  text-decoration: underline;
+  text-decoration-color: steelblue;
+}
+.battleship-board{
+ display: grid;
+ grid-template-columns: 80px 80px 80px 80px; 
+ grid-template-rows: 80px 80px 80px 80px; 
+ justify-content: center;
+ margin-top: 30px;
+}
+.box {
+ border: 1px solid snow;
+}
+
+input{
+  margin-top: 30px;
+  margin-left: 330px;
+  height: 40px;
+  width: 80px;
+  background-color: brown;
+  box-shadow: 2px 2px steelblue;
+}
+
+#reset-btn{
+    box-shadow:5px 5px #FF7F7F;
+    height: 40px;
+    border-radius:10px;
+    width:80px;
+
+  }
